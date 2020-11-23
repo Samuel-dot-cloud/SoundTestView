@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Model> list = new ArrayList();
         list.add(new Model(Model.TEXT_TYPE, 0, "Hello. This is the Text-only View Type. Nice to meet you"));
         list.add(new Model(Model.IMAGE_TYPE, R.drawable.download, "Hi. I display a cool image too besides the omnipresent TextView."));
-        list.add(new Model(Model.AUDIO_TYPE, R.raw.sound, "Hey. Pressing the FAB button will playback an audio file on loop."));
-        list.add(new Model(Model.AUDIO_TYPE, R.raw.move, "Another sound file example."));
-        list.add(new Model(Model.IMAGE_TYPE, R.drawable.download, "Hi again. Another cool image here. Which one is better?"));
+        list.add(new Model(Model.AUDIO_TYPE, R.raw.sound, "Children playing sound."));
+        list.add(new Model(Model.AUDIO_TYPE, R.raw.move, "Cars moving sound"));
+        list.add(new Model(Model.AUDIO_TYPE, R.raw.insect, "Mosquito buzzing sound"));
+        list.add(new Model(Model.IMAGE_TYPE, R.drawable.design, "Hi again. Another cool image here. Which one is better?"));
 
         MultiViewTypeAdapter adapter = new MultiViewTypeAdapter(list, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
