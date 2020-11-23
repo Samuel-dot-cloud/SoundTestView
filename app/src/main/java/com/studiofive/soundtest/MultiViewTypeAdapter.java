@@ -131,7 +131,7 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter {
                                 fabStateVolume = false;
 
                             } else {
-                                mPlayer = MediaPlayer.create(mContext, R.raw.sound);
+                                mPlayer = MediaPlayer.create(mContext, object.data);
                                 mPlayer.setLooping(true);
                                 mPlayer.start();
                                 ((AudioTypeViewHolder) holder).fab.setImageResource(R.drawable.mute);
